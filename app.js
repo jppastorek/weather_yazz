@@ -1,9 +1,4 @@
-yazzButton = document.getElementById('yazz-button');
-
-yazzButton.addEventListener('click', () => {
-    yazzButton.textContent = 'YAZZ ACTIVATED';
-    console.log('the yazz has been activated. hail chromelord');
-});
+const yazzButton = document.querySelector("#yazz-button");
 
 function updateClock() {
     const now = new Date();
@@ -14,15 +9,40 @@ function updateClock() {
     });
 
     const date = now.toLocaleDateString("en-US", {
-        weekday: "long",
-        month: "long",
-        day: "numeric"
+        weekday: "short",
+        month: "short",
+        day: "2-digit",
+        year: "2-digit"
     });
 
     document.querySelector("#current-time").textContent = time;
     document.querySelector("#current-date").textContent = date.toUpperCase();
 }
 
+function activateYazz() {
+    const activated = yazzButton.dataset.active === "true";
+
+    if (!activated) {
+        yazzButton.dataset.active = "true";
+
+        yazzButton.textContent = "YAZZ ACTIVE";
+
+        document.querySelector("#status-message").textContent =
+            "SMOOTH YAZZ CONDITIONS HAVE BEEN ACTIVATED";
+
+        console.log("The Yazz has been entered.");
+    } else {
+        yazzButton.dataset.active = "false";
+
+        yazzButton.textContent = "ENTER THE YAZZ";
+
+        document.querySelector("#status-message").textContent =
+            "SMOOTH CONDITIONS CONTINUE ACROSS THE AREA";
+    }
+}
+
+yazzButton.addEventListener("click", activateYazz);
+
 updateClock();
 
-setInterval(updateClock, 1000);
+setInterval(updateClock, 30000);

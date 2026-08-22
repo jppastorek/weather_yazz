@@ -1,75 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Yazz</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  </head>
+<body>
+    <div class="broadcast-shell">
+        <div class="weather-screen">
 
-  <body>
-    <div class="screen">
-      <header class="top-bar">
-        <div class="logo">
-          <span class="weather">Weather</span>
-          <span class="yazz">Yazz</span>
+            <header class="top-bar">
+                <div class="brand-box" aria-label="Weather Yazz">
+                    <span class="brand-the">THE</span>
+                    <span class="brand-weather">WEATHER</span>
+                    <span class="brand-yazz">YAZZ</span>
+                </div>
+
+                <div class="title-block">
+                    <div class="title-kicker">LOCAL WEATHER</div>
+                    <div class="panel-title">Current<br>Conditions</div>
+                </div>
+
+                <div class="clock-block">
+                    <div id="current-time">--:-- --</div>
+                    <div id="current-date">---</div>
+                </div>
+            </header>
+
+            <main class="current-panel">
+                <section class="left-weather">
+                    <div class="temperature" id="temperature">82°</div>
+                    <div class="condition" id="condition">Partly Smooth</div>
+
+                    <div class="weather-art" aria-hidden="true">
+                        <div class="sun"></div>
+                        <div class="cloud cloud-back"></div>
+                        <div class="cloud cloud-front"></div>
+                    </div>
+                </section>
+
+                <section class="conditions-table" aria-label="Current conditions">
+                    <div class="data-label">AT:</div>
+                    <div class="data-value location" id="location">New Orleans</div>
+
+                    <div class="data-label">Feels Like:</div>
+                    <div class="data-value" id="feels-like">86°</div>
+
+                    <div class="data-label">Humidity:</div>
+                    <div class="data-value" id="humidity">72%</div>
+
+                    <div class="data-label">Pressure:</div>
+                    <div class="data-value" id="pressure">30.02</div>
+
+                    <div class="data-label">Wind:</div>
+                    <div class="data-value" id="wind">SE 8 mph</div>
+                </section>
+            </main>
+
+            <section class="status-strip">
+                <div class="status-label">YAZZCAST</div>
+                <div class="status-message" id="status-message">
+                    SMOOTH CONDITIONS CONTINUE ACROSS THE AREA
+                </div>
+            </section>
+
+            <section class="yazz-strip">
+                <div class="now-playing">
+                    <span class="now-playing-label">NOW PLAYING:</span>
+                    <span class="track-name">WEATHER YAZZ</span>
+                </div>
+
+                <button id="yazz-button" type="button">ENTER THE YAZZ</button>
+            </section>
+
+            <footer>
+                <span>© 2026 WEATHER YAZZ</span>
+                <span>BY JPP</span>
+            </footer>
+
+            <div class="crt-overlay" aria-hidden="true"></div>
         </div>
-
-        <div class="date-time">
-          <div id="current-time">7:00 AM</div>
-          <div id="current-date">SATURDAY, AUGUST 22</div>
-        </div>
-      </header>
-
-      <main class="weather-panel">
-        <section class="location">
-          <p class="location-label">CURRENT CONDITIONS</p>
-          <h2>New Orleans, Louisiana</h2>
-        </section>
-
-        <section class="current-weather">
-          <div class="weather-icon">☀</div>
-
-          <div class="temperature">
-            <span class="temp-number">82</span>
-            <span class="degree">°</span>
-          </div>
-
-          <div class="conditions">
-            <h3>Partly Smooth</h3>
-            <p>Feels like 86°</p>
-            <p>Humidity 72%</p>
-            <p>Wind SE 8 mph</p>
-          </div>
-        </section>
-
-        <section class="yazz-zone">
-          <p class="now-playing-label">NOW PLAYING</p>
-
-          <h1>Weather Yazz</h1>
-
-          <p id="tagline">Today's forecast is smooth.</p>
-
-          <button id="yazz-button">▶ ENTER THE YAZZ</button>
-        </section>
-      </main>
-
-      <div class="ticker">
-        <div class="ticker-content">
-          NEW ORLEANS &nbsp;&nbsp; 82° &nbsp;&nbsp; HUMIDITY 72% &nbsp;&nbsp;
-          WIND SE 8 MPH &nbsp;&nbsp; VISIBILITY 10 MI &nbsp;&nbsp; YAZZ LEVEL:
-          EXTREMELY SMOOTH
-        </div>
-      </div>
-
-      <footer>
-        <p>© 2026 Weather Yazz · By JPP</p>
-      </footer>
     </div>
 
     <script src="app.js" defer></script>
-  </body>
+</body>
 </html>
