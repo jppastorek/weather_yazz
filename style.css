@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #152238;
+    color: white;
+}
+
+#yazz-button {
+    cursor: pointer;
+    border: none;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#yazz-button:hover {
+    background: #0056b3;
+}
+
