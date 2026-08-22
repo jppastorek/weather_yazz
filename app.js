@@ -12,7 +12,6 @@ function updateClock() {
         weekday: "short",
         month: "short",
         day: "2-digit",
-        year: "2-digit"
     });
 
     document.querySelector("#current-time").textContent = time;
