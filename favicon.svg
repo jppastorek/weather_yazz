@@ -1,31 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="10" fill="#12385c"/>
-  <rect x="6" y="6" width="52" height="52" rx="8" fill="none" stroke="#f0d58f" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 128 128"
+     shape-rendering="crispEdges">
 
-  <text
-    x="32"
-    y="24"
-    text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="9"
-    font-weight="700"
-    fill="#dfeaf2"
-  >
-    WEATHER
-  </text>
+    <!-- OUTER ORANGE FRAME -->
+    <rect x="4" y="12" width="120" height="104" fill="#c9470d"/>
+    <rect x="8" y="8" width="112" height="112" fill="#e9670b"/>
+    <rect x="12" y="4" width="104" height="120" fill="#f5820b"/>
 
-  <text
-    x="32"
-    y="42"
-    text-anchor="middle"
-    font-family="Georgia, serif"
-    font-size="16"
-    font-style="italic"
-    font-weight="700"
-    fill="#f0d58f"
-  >
-    Yazz
-  </text>
+    <!-- WHITE INNER BORDER -->
+    <rect x="16" y="12" width="96" height="104" fill="#eeeadd"/>
 
-  <rect x="14" y="48" width="36" height="3" rx="1.5" fill="#dfeaf2" opacity="0.85"/>
+    <!-- BLUE SCREEN -->
+    <rect x="20" y="16" width="88" height="96" fill="#091b73"/>
+
+    <!-- LOW-COLOR BLUE BANDS -->
+    <rect x="20" y="28" width="88" height="12" fill="#0c2c94"/>
+    <rect x="20" y="40" width="88" height="12" fill="#123aa6"/>
+    <rect x="20" y="52" width="88" height="12" fill="#1644ad"/>
+    <rect x="20" y="64" width="88" height="12" fill="#123b9e"/>
+    <rect x="20" y="76" width="88" height="12" fill="#0d318d"/>
+    <rect x="20" y="88" width="88" height="20" fill="#092672"/>
+
+    <!-- PIXEL SUN -->
+    <rect x="28" y="22" width="4" height="8" fill="#ffd630"/>
+    <rect x="18" y="32" width="8" height="4" fill="#ffd630"/>
+    <rect x="36" y="32" width="8" height="4" fill="#ffd630"/>
+    <rect x="22" y="26" width="4" height="4" fill="#ffd630"/>
+    <rect x="38" y="26" width="4" height="4" fill="#ffd630"/>
+    <rect x="24" y="30" width="16" height="16" fill="#f7cd27"/>
+    <rect x="28" y="26" width="8" height="20" fill="#ffd630"/>
+
+    <!-- PIXEL CLOUD SHADOW -->
+    <rect x="20" y="48" width="34" height="12" fill="#6e72a7"/>
+    <rect x="24" y="42" width="10" height="14" fill="#6e72a7"/>
+    <rect x="34" y="38" width="12" height="20" fill="#6e72a7"/>
+    <rect x="46" y="44" width="10" height="14" fill="#6e72a7"/>
+
+    <!-- PIXEL CLOUD -->
+    <rect x="18" y="44" width="36" height="12" fill="#e8e7df"/>
+    <rect x="22" y="40" width="10" height="14" fill="#f4f2ea"/>
+    <rect x="30" y="34" width="14" height="20" fill="#f4f2ea"/>
+    <rect x="42" y="40" width="10" height="14" fill="#deded8"/>
+
+    <!-- WEATHER LABEL -->
+    <text x="62"
+          y="48"
+          font-family="monospace"
+          font-size="12"
+          font-weight="bold"
+          fill="#f1eee5">
+        WEATHER
+    </text>
+
+    <!-- DARK YAZZ DROP SHADOW -->
+    <text x="65"
+          y="84"
+          text-anchor="middle"
+          font-family="monospace"
+          font-size="35"
+          font-weight="bold"
+          fill="#06164d">
+        YAZZ
+    </text>
+
+    <!-- YAZZ -->
+    <text x="62"
+          y="81"
+          text-anchor="middle"
+          font-family="monospace"
+          font-size="35"
+          font-weight="bold"
+          fill="#ffd32b">
+        YAZZ
+    </text>
+
+    <!-- ORANGE UNDERLINE SHADOW -->
+    <rect x="28" y="94" width="74" height="5" fill="#071847"/>
+
+    <!-- ORANGE UNDERLINE -->
+    <rect x="26" y="92" width="74" height="4" fill="#f4760c"/>
+
 </svg>
