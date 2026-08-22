@@ -1,99 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Weather Yazz</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  </head>
 
-<body>
-
+  <body>
     <div class="screen">
-
-        <header class="top-bar">
-            <div class="logo">
-                <span class="weather">Weather</span>
-                <span class="yazz">Yazz</span>
-            </div>
-
-            <div class="station">
-                YOUR LOCAL SMOOTH WEATHER
-            </div>
-        </header>
-
-
-        <main class="weather-panel">
-
-            <section class="location">
-                <p class="location-label">CURRENT CONDITIONS</p>
-                <h2>New Orleans, Louisiana</h2>
-            </section>
-
-
-            <section class="current-weather">
-
-                <div class="weather-icon">
-                    ☀
-                </div>
-
-                <div class="temperature">
-                    <span class="temp-number">82</span>
-                    <span class="degree">°</span>
-                </div>
-
-                <div class="conditions">
-                    <h3>Partly Smooth</h3>
-                    <p>Feels like 86°</p>
-                    <p>Humidity 72%</p>
-                    <p>Wind SE 8 mph</p>
-                </div>
-
-            </section>
-
-
-            <section class="yazz-zone">
-
-                <p class="now-playing-label">NOW PLAYING</p>
-
-                <h1>Weather Yazz</h1>
-
-                <p id="tagline">
-                    Today's forecast is smooth.
-                </p>
-
-                <button id="yazz-button">
-                    ▶ ENTER THE YAZZ
-                </button>
-
-            </section>
-
-        </main>
-
-
-        <div class="ticker">
-            <div class="ticker-content">
-                NEW ORLEANS &nbsp;&nbsp; 82° &nbsp;&nbsp;
-                HUMIDITY 72% &nbsp;&nbsp;
-                WIND SE 8 MPH &nbsp;&nbsp;
-                VISIBILITY 10 MI &nbsp;&nbsp;
-                YAZZ LEVEL: EXTREMELY SMOOTH
-            </div>
+      <header class="top-bar">
+        <div class="logo">
+          <span class="weather">Weather</span>
+          <span class="yazz">Yazz</span>
         </div>
 
+        <div class="date-time">
+          <div id="current-time">7:00 AM</div>
+          <div id="current-date">SATURDAY, AUGUST 22</div>
+        </div>
+      </header>
 
-        <footer>
-            <p>
-                © 2026 Weather Yazz · By JPP
-            </p>
-        </footer>
+      <main class="weather-panel">
+        <section class="location">
+          <p class="location-label">CURRENT CONDITIONS</p>
+          <h2>New Orleans, Louisiana</h2>
+        </section>
 
+        <section class="current-weather">
+          <div class="weather-icon">☀</div>
+
+          <div class="temperature">
+            <span class="temp-number">82</span>
+            <span class="degree">°</span>
+          </div>
+
+          <div class="conditions">
+            <h3>Partly Smooth</h3>
+            <p>Feels like 86°</p>
+            <p>Humidity 72%</p>
+            <p>Wind SE 8 mph</p>
+          </div>
+        </section>
+
+        <section class="yazz-zone">
+          <p class="now-playing-label">NOW PLAYING</p>
+
+          <h1>Weather Yazz</h1>
+
+          <p id="tagline">Today's forecast is smooth.</p>
+
+          <button id="yazz-button">▶ ENTER THE YAZZ</button>
+        </section>
+      </main>
+
+      <div class="ticker">
+        <div class="ticker-content">
+          NEW ORLEANS &nbsp;&nbsp; 82° &nbsp;&nbsp; HUMIDITY 72% &nbsp;&nbsp;
+          WIND SE 8 MPH &nbsp;&nbsp; VISIBILITY 10 MI &nbsp;&nbsp; YAZZ LEVEL:
+          EXTREMELY SMOOTH
+        </div>
+      </div>
+
+      <footer>
+        <p>© 2026 Weather Yazz · By JPP</p>
+      </footer>
     </div>
 
     <script src="app.js" defer></script>
-
-</body>
+  </body>
 </html>
